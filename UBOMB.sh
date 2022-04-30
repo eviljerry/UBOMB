@@ -38,10 +38,10 @@ banner() {
         toilet -f mono12 -F border UMED_XD
     fi
     echo -e "\e[1;34m For Any Queries Join Me!!!\e[0m"
-    echo -e "\e[1;32m           Telegram: https://t.me/TBombChat \e[0m"
-    echo -e "\e[4;32m   YouTube: https://www.youtube.com/c/SpeedXTech \e[0m"
+    echo -e "\e[1;32m           Telegram: https://t.me/rajput_ofc \e[0m"
+    echo -e "\e[4;32m   YouTube: https://www.youtube.com/c/eviljerryff \e[0m"
     echo " "
-    echo "NOTE: Kindly move to the PIP version Of TBomb for more stability."
+    echo "NOTE: Kindly move to the PIP version Of UBomb for more stability."
     echo " "
 }
 
@@ -98,7 +98,7 @@ else
     echo .
     echo .
     install_deps
-    echo This Script Was Made By SpeedX > .update
+    echo This Script Was Made By UMED_XD > .update
     echo 'Requirements Installed....'
     pause
 fi
@@ -127,7 +127,7 @@ do
         echo -e "\e[1;34m Downloading Latest Files..."
         rm -f .update
         $PYTHON bomber.py --update
-        echo -e "\e[1;34m RUN TBomb Again..."
+        echo -e "\e[1;34m RUN UBomb Again..."
         pause
         exit
     elif [ $ch -eq 5 ];then
