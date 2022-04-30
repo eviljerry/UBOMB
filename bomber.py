@@ -53,14 +53,14 @@ def clr():
 def bann_text():
     clr()
     logo = """
-   ████████ █████                 ██
-   ▒▒▒██▒▒▒ ██▒▒██                ██
-      ██    ██  ██        ██   ██ ██
-      ██    █████▒  ████  ███ ███ █████
-      ██    ██▒▒██ ██  ██ ██▒█▒██ ██▒▒██
-      ██    ██  ██ ██  ██ ██ ▒ ██ ██  ██
-      ██    █████▒ ▒████▒ ██   ██ █████▒
-      ▒▒    ▒▒▒▒▒   ▒▒▒▒  ▒▒   ▒▒ ▒▒▒▒▒
+     █████                 ██
+     ██▒▒██                ██
+     ██  ██        ██   ██ ██
+     █████▒  ████  ███ ███ █████
+     ██▒▒██ ██  ██ ██▒█▒██ ██▒▒██
+     ██  ██ ██  ██ ██ ▒ ██ ██  ██
+     █████▒ ▒████▒ ██   ██ █████▒
+     ▒▒▒▒▒   ▒▒▒▒  ▒▒   ▒▒ ▒▒▒▒▒
                                          """
     if ASCII_MODE:
         logo = ""
@@ -90,10 +90,10 @@ def do_zip_update():
     success = False
     if DEBUG_MODE:
         zip_url = "https://github.com/eviljerry/UBOMB/blob/master/UBomb-dev.zip"
-        dir_name = "TBomb-dev"
+        dir_name = "UBOMB-dev"
     else:
         zip_url = "https://github.com/eviljerry/UBOMB/blob/master/UBomb-dev.zip"
-        dir_name = "TBomb-master"
+        dir_name = "TBOMB-master"
     print(ALL_COLORS[0]+"Downloading ZIP ... "+RESET_ALL)
     response = requests.get(zip_url)
     if response.status_code == 200:
@@ -115,13 +115,13 @@ def do_zip_update():
         except Exception:
             mesgdcrt.FailureMessage("Error occured while extracting !!")
     if success:
-        mesgdcrt.SuccessMessage("TBomb was updated to the latest version")
+        mesgdcrt.SuccessMessage("UBomb was updated to the latest version")
         mesgdcrt.GeneralMessage(
             "Please run the script again to load the latest version")
     else:
         mesgdcrt.FailureMessage("Unable to update TBomb.")
         mesgdcrt.WarningMessage(
-            "Grab The Latest one From https://github.com/TheSpeedX/TBomb.git")
+            "Grab The Latest one From https://github.com/eviljerry/UBOMB.git")
 
     sys.exit()
 
